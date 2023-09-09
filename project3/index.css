@@ -1,0 +1,239 @@
+.mouni {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(header-img.jpeg) no-repeat center center/cover;
+  opacity: 1;
+}
+.banner {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  translate: (-50%, 50%);
+  width: 80%;
+}
+.raju {
+  animation-name: animation;
+  animation-duration: 2s;
+}
+.pinky {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+@keyframes animation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding: 30px;
+}
+.king {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.7;
+}
+.king:hover {
+  color: blue;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  width: 20px;
+  height: 3px;
+  margin: 5px;
+
+  transition: all 0.4s;
+}
+.change .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+.change .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.line1 {
+  width: 150px;
+  border: 3px solid white;
+  margin: auto;
+}
+.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 1s;
+}
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 2s;
+}
+@keyframes fromLeft {
+  0% {
+    transform: translateX(120deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+/* collection */
+.card-shadow {
+  box-shadow: 2px 4px 23px #333;
+}
+.heading {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  font-size: 14px;
+  background-color: #222;
+  cursor: pointer;
+  opacity: 0.7;
+  transform: all 0.4s;
+  width: 70%;
+}
+.heading:hover {
+  opacity: 1;
+}
+/* gallery */
+.line1 {
+  width: 150px;
+  border: 3px solid #999;
+  margin: auto;
+}
+.gallery-inline-item {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+.gallery-inline-item:hover {
+  color: blue;
+}
+/* customers section */
+.lines1 {
+  width: 150px;
+  border: 3px solid white;
+  margin: auto;
+}
+.mark {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: black;
+  font-size: 20px;
+}
+/* pricing */
+.card {
+  box-shadow: 4px 12px 16px black;
+}
+.card-body {
+  /* margin: 20px; */
+  padding: 30px;
+  box-shadow: 4px 6px 12px #777;
+}
+.wood {
+  /* font-weight: bold; */
+  font-size: 34px;
+}
+.john {
+  font-size: 30px;
+}
+.card-1,
+.card-2,
+.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(pricing-card-bg.jpeg) no-repeat center center/cover;
+}
+.card-list-item {
+  border-bottom: 3px groove white;
+  width: 30%;
+  margin: auto;
+}
+.card-button {
+  margin-left: 37%;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: orangered;
+  box-shadow: 2px 8px 12px white;
+  transform: all 0.2s;
+}
+.card-button:hover {
+  background-color: orange;
+  transform: translate(-2px);
+}
+.card-1 {
+  animation-name: fromLeft;
+  animation-duration: 1s;
+}
+.card-2 {
+  animation-name: fromRight;
+  animation-duration: 1s;
+}
+.card-3 {
+  animation-name: fromBottom;
+  animation-duration: 1s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+/* contact */
+.contact {
+  background: linear-gradient(
+      105deg,
+      rgba(21, 31, 32, 1) 0%,
+      rgba(21, 31, 31, 96) 50%,
+      transparent 50%
+    ),
+    url(images/form-img.jpeg) no-repeat center center/cover;
+}
+/* footer */
+.nattu {
+  width: 100%s;
+  border: 2px solid white;
+}
